@@ -51,17 +51,17 @@ const Contact = () => {
             </p>
             <ul className="list gap-4">
               <li className="list-row p-0">
-                <a className=" text-lg" href="#">
+                <a className=" text-lg" href="#" arial-label="gmail link">
                   johndoe@mail.com
                 </a>
               </li>
               <li className="list-row p-0">
-                <a className=" text-lg" href="#">
+                <a className=" text-lg" href="#" arial-label="twitter link">
                   twitter.com/johndoe
                 </a>
               </li>
               <li className="list-row p-0">
-                <a className=" text-lg" href="#">
+                <a className=" text-lg" href="#" arial-label="behance link">
                   behance.com/johndoe
                 </a>
               </li>

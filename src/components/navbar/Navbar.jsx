@@ -39,6 +39,7 @@ const Navbar = () => {
                   <Link
                     className="capitalize hover:bg-transparent"
                     to={link}
+                    href={`#${link}`}
                     activeClass="active"
                     spy={true}
                     smooth={true}
@@ -55,7 +56,8 @@ const Navbar = () => {
             </ul>
           </div>
           <a
-            href="#" arial-label='social media link'
+            href="#"
+            arial-label="social media link"
             className="text-xl font-semibold hover:text-darkblue duration-500"
           >
             John Doe
@@ -91,7 +93,11 @@ const Navbar = () => {
         <div className="navbar-end">
           <ul className="menu menu-horizontal px-1 gapy-1 md:gap-4">
             <li>
-              <a className="hover:bg-transparent capitalize" href="#" arial-label='social media link'>
+              <a
+                className="hover:bg-transparent capitalize"
+                href="#"
+                arial-label="social media link"
+              >
                 <svg
                   width="26"
                   height="16"
@@ -114,7 +120,11 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="hover:bg-transparent capitalize" href="#" arial-label='social media link'>
+              <a
+                className="hover:bg-transparent capitalize"
+                href="#"
+                arial-label="social media link"
+              >
                 <svg
                   width="26"
                   height="17"
@@ -137,7 +147,11 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="hover:bg-transparent capitalize" href="#" arial-label='social media link'>
+              <a
+                className="hover:bg-transparent capitalize"
+                href="#"
+                arial-label="social media link"
+              >
                 <svg
                   width="26"
                   height="18"
