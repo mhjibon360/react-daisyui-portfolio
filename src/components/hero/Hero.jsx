@@ -1,5 +1,5 @@
 import React from "react";
-import hroimage from "../../assets";
+import heroimage from "../../assets/hero.webp";
 import { motion } from "motion/react";
 import Tilt from "react-parallax-tilt";
 
@@ -38,7 +38,7 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 0.1 }}
                 className=" w-96 mt-10 md:mt-0"
               >
-                <img src={hroimage} alt="" />
+                <img src={heroimage} alt="" />
               </motion.div>
             </Tilt>
           </div>

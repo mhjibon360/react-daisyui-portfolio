@@ -29,25 +29,33 @@ const Navbar = () => {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li>
-                <a className=" capitalize" href="#">
-                  home
-                </a>
-              </li>
-              <li>
-                <a className=" capitalize" href="#">
-                  about
-                </a>
-              </li>
-              <li>
-                <a className=" capitalize" href="#">
-                  work
-                </a>
-              </li>
+              {navLinks.map(({ id, label, link, delay }) => (
+                <motion.li
+                  key={id}
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: delay }}
+                >
+                  <Link
+                    className="capitalize hover:bg-transparent"
+                    to={link}
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={50}
+                    duration={500}
+                    delay={200}
+                    isDynamic={true}
+                  >
+                    {label}
+                  </Link>
+                </motion.li>
+              ))}
             </ul>
           </div>
           <a
-            href="#"
+            href="#" arial-label='social media link'
             className="text-xl font-semibold hover:text-darkblue duration-500"
           >
             John Doe
@@ -83,7 +91,7 @@ const Navbar = () => {
         <div className="navbar-end">
           <ul className="menu menu-horizontal px-1 gapy-1 md:gap-4">
             <li>
-              <a className="hover:bg-transparent capitalize" href="#">
+              <a className="hover:bg-transparent capitalize" href="#" arial-label='social media link'>
                 <svg
                   width="26"
                   height="16"
@@ -106,7 +114,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="hover:bg-transparent capitalize" href="#">
+              <a className="hover:bg-transparent capitalize" href="#" arial-label='social media link'>
                 <svg
                   width="26"
                   height="17"
@@ -129,7 +137,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="hover:bg-transparent capitalize" href="#">
+              <a className="hover:bg-transparent capitalize" href="#" arial-label='social media link'>
                 <svg
                   width="26"
                   height="18"
