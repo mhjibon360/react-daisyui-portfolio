@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+@theme {
+  --color-darkblue: #03045E;
+  --color-darkbrown: #474306;
+  --color-yellow: #F5EE84;
+  --color-yellowlight: #FBF8CC;
+  /* google fonts */
+  --font-poppins: "Poppins", sans-serif;
+}
+
+@layer base {
+  html {
+    @apply text-base;
+  }
+
+  body {
+    @apply bg-yellowlight text-darkblue font-poppins;
+  }
+}
+
+@layer components {
+  .container {
+    @apply container mx-auto px-8;
+  }
+
+  .btn-yellow {
+    @apply bg-yellow rounded-md py-3 px-6 text-darkbrown relative before:content-[''] before:absolute before:h-full before:w-full before:bg-transparent before:border-darkbrown before:border-2 before:rounded-md before:-top-3 before:-left-3 hover:before:top-0 hover:before:left-0 duration-700 delay-100 before:transition-all hover:bg-darkbrown hover:text-yellowlight transition-all
+  }
+}
