@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../title/Title";
-import contactiamge from "../../assets/contact.png";
+import contactiamge from "../../assets/contact.webp";
 import { useForm } from "react-hook-form";
 import { motion } from "motion/react";
 const Contact = () => {

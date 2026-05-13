@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../title/Title";
-import w1 from "../../assets/w1.png";
-import w2 from "../../assets/w2.png";
+import w1 from "../../assets/w1.webp";
+import w2 from "../../assets/w2.webp";
 import { motion } from "motion/react";
 const work = () => {
   return (
@@ -30,7 +30,7 @@ const work = () => {
             className="card rounded-none"
           >
             <figure>
-              <img src={w1} className="h-[300px]" alt="Shoes" />
+              <img src={w1} className="h-[300px]" alt="work image" />
             </figure>
             <div className="card-body">
               <span className=" text-sm italic">November 24, 2019</span>
@@ -55,7 +55,7 @@ const work = () => {
             className="card rounded-none"
           >
             <figure>
-              <img src={w2} className="h-[300px]" alt="Shoes" />
+              <img src={w2} className="h-[300px]" alt="work image" />
             </figure>
             <div className="card-body">
               <span className=" text-sm italic">November 24, 2019</span>
@@ -83,7 +83,7 @@ const work = () => {
               <img
                 src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                 className="h-[300px]"
-                alt="Shoes"
+                alt="work image"
               />
             </figure>
             <div className="card-body">

@@ -1,4 +1,4 @@
-import hroimage from "../assets/hero.png";
+import hroimage from "../assets/hero.webp";
 export default hroimage;
 
 export const navLinks = [
